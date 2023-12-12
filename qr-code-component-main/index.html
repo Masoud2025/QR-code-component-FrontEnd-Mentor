@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  box-sizing: border-box;
+
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color: hsl(212, 45%, 89%);
+  --grayish-blue-color: hsl(220, 15%, 55%);
+  --dark-blue-color: hsl(218, 44%, 22%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--white-color);
+  border-radius: 1em;
+}
+
+.media-image > img {
+  display: block;
+  max-width: 100%;
+  border-radius: 1em;
+}
+
+.media-body {
+  padding: 1.4em;
+  text-align: center;
+}
+
+.media-body > * + * {
+  margin-top: 1em;
+}
+
+.media-body > h1 {
+  font-size: 1.3rem;
+  color: var(--dark-blue-color);
+}
+
+.media-body > p {
+  font-size: 0.9rem;
+  color: var(--grayish-blue-color);
+}
+  </style>
+</head>
+<body>
+  <main class="media">
+    <div class="media-image">
+      <img src="images/image-qr-code.png" alt="QR code to front-end mentor">
+    </div>
+    <div class="media-body">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your
+        coding skills to the next level
+      </p>
+    </div>
+  </main>
+</body>
+</html>
